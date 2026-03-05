@@ -1,5 +1,11 @@
 const statusApi = document.querySelector("#statusApi");
+const botao = document.querySelector("#btnEstado")
+const resultado =document.querySelector("#resultado")
 
+botao.addEventListener('click', consultarStatus)
+
+
+//Verificao de Status do sistema
 
 function consultarStatus (){
     fetch("https://covid19-brazil-api.now.sh/api/status/v1", {
@@ -23,3 +29,5 @@ function consultarStatus (){
 }
 
 consultarStatus();
+
+//Verificação de caso do covid nos estados brasileiro
