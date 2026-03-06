@@ -1,5 +1,85 @@
+/* Estilo Chaves - Covid19 Brasil */
+:root {
+    --amarelo-chaves: #FFD700;
+    --marrom-chaves: #8B4513;
+    --bege-vila: #F5DEB3;
+    --verde-piscina: #8FBC8F;
+    --vermelho-chaves: #C0392B;
+    --fonte-principal: 'Comic Sans MS', 'Comic Sans', cursive; /* Estilo HQ */
+}
+
+body {
+    background-color: var(--bege-vila);
+    background-image: url('https://i.imgur.com'); /* Opcional: Textura de parede */
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+#estado {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2); /* Sombra pesada estilo cartoon */
+    border: 4px solid var(--marrom-chaves);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: var(--marrom-chaves);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px var(--amarelo-chaves);
+}
+
+input#pesquisar {
+    padding: 10px;
+    width: 70%;
+    border: 3px solid var(--verde-piscina);
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    outline: none;
+}
+
+button#btnEstado {
+    padding: 10px 15px;
+    background-color: var(--vermelho-chaves);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    transition: transform 0.1s;
+}
+
+button#btnEstado:hover {
+    background-color: #A93226;
+    transform: scale(1.05);
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px dashed var(--marrom-chaves);
+    font-size: 1.1em;
+    min-height: 50px;
+}
+
 #statusApi {
-    
-    text-align:right;
-    color: rgb(12, 121, 2);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--amarelo-chaves);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid var(--marrom-chaves);
 }

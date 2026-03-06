@@ -50,7 +50,7 @@ fetch(`https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${nome}`, {
     <p>Estado:   ${dados.state} - ${dados.uf}</p>
     <p>Casos:   ${dados. cases}</p>
     <p>Mortes:  ${dados.deaths}</p>
-    <p>Recuperados:  ${dados.refuses}</p>
+    <p>Refutados:  ${dados.refuses}</p>
     ` 
 
     //console.log(nome, dados.state)
